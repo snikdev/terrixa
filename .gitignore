@@ -1,0 +1,9 @@
+# Luanti/Terrixa gitignore
+debug.txt
+cache/
+worlds/*
+!worlds/.placeholder
+screenshots/
+mod_data/
+*.exe.old
+launcher/config.json
