@@ -48,7 +48,7 @@ function Start-Game($exePath, $statusLabel) {
             Start-Sleep -Milliseconds 500
             $proc = Get-Process -Id $procId -ErrorAction SilentlyContinue
             if ($proc -and $proc.MainWindowHandle -ne [IntPtr]::Zero) {
-                [WinApi]::SetWindowText($proc.MainWindowHandle, "Terrixa 5.15.2")
+                [WinApi]::SetWindowText($proc.MainWindowHandle, "Terrixa 1.1.0")
                 break
             }
         }

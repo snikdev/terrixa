@@ -41,6 +41,7 @@ local old_get_version = core.get_version
 core.get_version = function()
 	local v = old_get_version()
 	v.project = "Terrixa"
+	v.string = "1.1.0"
 	return v
 end
 

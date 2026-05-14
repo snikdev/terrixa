@@ -19,7 +19,7 @@ Download the latest release from our [GitHub Releases](https://github.com/snikde
 ### **3. Launch**
 - Double-click **`TerrixaLauncher.bat`** to open the launcher.
 - Click **"Play Terrixa"** to start the engine.
-- *Note: Using the launcher ensures the game runs with the correct branding and window settings.*
+- *Note: Using the launcher ensures the game runs with the correct branding (v1.1.0) and window settings.*
 
 ---
 
