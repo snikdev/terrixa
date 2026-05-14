@@ -1,26 +1,16 @@
-﻿# Third-Party Licenses (Terrixa)
+# Third-Party Licenses (Terrixa)
 
-This distribution contains third-party open-source code and assets.
+This distribution contains third-party open-source code and assets derived from the Luanti project.
 
-## Included License Files
-- `games/Terrixa/LICENSE.txt`
-- `games/Terrixa/mods/*/license.txt`
-- `fonts/*-LICENSE.txt`
+## Core Engine
+- **Luanti**: Licensed under LGPL v2.1 or later.
+  Source: https://github.com/luanti-org/luanti
 
-## Core Upstream Family
-- Luanti / Minetest ecosystem components
+## Assets & Content
+- **Textures, Sounds, Models**: Most original Luanti/Minetest Game assets are licensed under **CC BY-SA 3.0**.
+- **Fonts**: See individual license files in the `fonts/` directory.
 
-## License Summary
-- LGPL-2.1: used by code portions in the included game package
-- CC BY-SA 3.0: used by many textures/sounds and menu assets
-- Additional per-mod terms: see each mod's `license.txt`
-
-## Your Rights and Obligations (high-level)
-- You may distribute binaries.
-- You must preserve license and attribution notices.
-- For LGPL-covered modified code you distribute, provide corresponding source.
-- For CC BY-SA derivative media, keep attribution and share-alike terms.
-
-## Source Link
-Source for this build and modifications:
-- REPLACE_WITH_YOUR_SOURCE_LINK
+## Obligations
+- This derivative work maintains the original license terms.
+- Modified engine code is provided under the same LGPL license.
+- Credits to original authors are preserved in `LICENSE.txt` and per-mod directories.

@@ -1,35 +1,9 @@
-﻿# Terrixa Release Compliance
+Luanti (formerly Minetest) is an open source voxel game-creation platform.
+This project, Terrixa, is a derivative work of Luanti.
 
-This game build includes code and assets from Luanti/Minetest-derived projects.
+Luanti is licensed under the GNU Lesser General Public License, version 2.1 or later.
+You can find the original source code for Luanti at:
+https://github.com/luanti-org/luanti
 
-## What is distributed
-- Binary: `Terrixa.exe`
-- Game content: `games/Terrixa`
-
-## Source Code Availability
-The source code for LGPL-covered components and local modifications is available at:
-- REPLACE_WITH_YOUR_SOURCE_LINK
-
-If you distribute this build without a public source link, provide a written offer to provide source code on request.
-
-## Main Licenses
-- Game code: LGPL-2.1 (see `games/Terrixa/LICENSE.txt`)
-- Many game media assets: CC BY-SA 3.0 (see `games/Terrixa/LICENSE.txt` and per-mod `license.txt` files)
-
-## Attribution and Notices
-Keep original copyright and license notices.
-Do not remove existing per-mod license files.
-
-## Recommended Release Package Layout
-- `Terrixa.exe`
-- `games/`
-- `mods/` (if used)
-- `licenses/` (or keep included license files in-place)
-- `SOURCE_CODE_NOTICE.txt` (this file)
-
-## Checklist Before Publishing
-1. Replace `REPLACE_WITH_YOUR_SOURCE_LINK` with your real repo/download URL.
-2. Verify modified source is present in that URL.
-3. Include `games/Terrixa/LICENSE.txt` in your distribution.
-4. Keep per-mod `license.txt` files.
-5. Keep attribution for modified media where required.
+The modified source code for Terrixa is available at:
+https://github.com/snikdev/terrixa.git

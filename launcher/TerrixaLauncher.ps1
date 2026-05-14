@@ -29,21 +29,28 @@ function Start-Game($exePath, $statusLabel) {
     $process = Start-Process -FilePath $exePath -WorkingDirectory (Split-Path -Parent $exePath) -PassThru
     $statusLabel.Text = 'Terrixa launched.'
 
-    # Rename window after a short delay
+    # Rename window after launch
     Start-Job -ScriptBlock {
         param($procId)
         Add-Type @"
             using System;
             using System.Runtime.InteropServices;
+            using System.Text;
             public class WinApi {
                 [DllImport("user32.dll")]
                 public static extern bool SetWindowText(IntPtr hWnd, string lpString);
+                [DllImport("user32.dll")]
+                public static extern bool IsWindowVisible(IntPtr hWnd);
             }
 "@
-        Start-Sleep -Seconds 3
-        $proc = Get-Process -Id $procId -ErrorAction SilentlyContinue
-        if ($proc -and $proc.MainWindowHandle -ne [IntPtr]::Zero) {
-            [WinApi]::SetWindowText($proc.MainWindowHandle, "Terrixa 5.15.2")
+        # Try multiple times to find the window
+        for ($i = 0; $i -lt 20; $i++) {
+            Start-Sleep -Milliseconds 500
+            $proc = Get-Process -Id $procId -ErrorAction SilentlyContinue
+            if ($proc -and $proc.MainWindowHandle -ne [IntPtr]::Zero) {
+                [WinApi]::SetWindowText($proc.MainWindowHandle, "Terrixa 5.15.2")
+                break
+            }
         }
     } -ArgumentList $process.Id | Out-Null
 }
