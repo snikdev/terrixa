@@ -4,7 +4,7 @@ Add-Type -AssemblyName System.Drawing
 $ErrorActionPreference = 'Stop'
 
 function Get-LauncherRoot {
-    Split-Path -Parent $MyInvocation.MyCommand.Path
+    return $PSScriptRoot
 }
 
 function Read-Config($path) {
